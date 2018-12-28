@@ -1,4 +1,5 @@
 # GREML
+Zaitlen et al. 2013 PLoS Genetics proposed a method to estimate pedigree-based and SNP-based h2 simultaneously in one model using family data. The main advantage of this method is that it allows us to estimate SNP-based h2 in family data without having to remove related individuals. The method has now been implemented in GCTA.
 
 ## Make Genetic relationship matrix
 
