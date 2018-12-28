@@ -5,11 +5,13 @@
 
 ##### Making a GRM from all SNPs in a family data set 
 ```
-./gcta64 --bfile test --make-grm --out test
+./gcta64 --bfile test.dev.noduplicates --make-grm --out test
+                     (Genotype file)              (GRM matrix)
 ```
 ##### Creating an additional GRM from the GRM above (setting the off-diagonals that are < 0.25 to 0) (related individuals only)
 ```
 ./gcta64 --grm test --make-bK 0.25 --out test_bK    (GCTA document used 0.05, but it is too stringent, especially for small datasets)
+           (GRM matrix)               (GRM matrix)
 ```
 
 ##### make a text file to include the name of GRM used for analysis (mgrm.txt)
