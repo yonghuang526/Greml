@@ -3,11 +3,11 @@
 ## Make Genetic relationship matrix
 
 
-##### Making a GRM from all SNPs in a family data set
+##### Making a GRM from all SNPs in a family data set 
 ```
 ./gcta64 --bfile test --make-grm --out test
 ```
-##### Creating an additional GRM from the GRM above (setting the off-diagonals that are < 0.25 to 0)
+##### Creating an additional GRM from the GRM above (setting the off-diagonals that are < 0.25 to 0) (related individuals only)
 ```
 ./gcta64 --grm test --make-bK 0.25 --out test_bK    (GCTA document used 0.05, but it is too stringent, especially for small datasets)
 ```
